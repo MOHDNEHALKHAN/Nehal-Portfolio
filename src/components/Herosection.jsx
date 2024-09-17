@@ -43,14 +43,14 @@ function Herosection() {
   });
 
   return (
-    <div className="herosection flex flex-col px-5 py-32 lg:py-40 xl:py-40 w-full overflow-hidden ">
+    <div className="herosection flex flex-col px-5 py-24 lg:py-40 xl:py-40 w-full bg-emerald-200 overflow-hidden h-dvh  ">
       <div className="flex flex-col lg:flex-row xl:flex-row items-center">
         <h1 className="animated-text text-center lg:text-left xl:text-left text-5xl  lg:text-6xl xl:text-8xl font-bold text-gray-800 px-6 lg:px-10 xl:px-10 font-['Kanit'] z-10">
           Hello, I&apos;m Fullstack Developer
         </h1>
-        <img src={nehalImg} alt="imgboy" className="nehalImg cursor-pointer z-20 px-5 py-5 overflow-hidden" />
+        <img src={nehalImg} alt="imgboy" className="nehalImg cursor-pointer z-20 px-10 md:px-5 lg:px-10 xl:px-5 py-5  sm:overflow-hidden " />
       </div>
-      <div className=" flex flex-col lg:flex-row xl:flex-row mt-5 lg:px-10 xl:px-10">
+      <div className=" flex flex-col lg:flex-row xl:flex-row mt-5 mx-5 lg:px-10 xl:px-10">
         <button className=" flex justify-center flex-row gap-3 items-center bg-slate-600 text-white px-5 py-2 rounded-full font-['Goldman'] font-normal mt-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"

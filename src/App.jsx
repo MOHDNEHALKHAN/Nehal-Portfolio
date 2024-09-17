@@ -3,7 +3,7 @@ import "./index.css";
 import Navbar from "./components/Navbar";
 import Herosection from "./components/Herosection";
 import About from "./components/About";
-
+import Skills from "./components/Skills";
 
 const App = () => {
 
@@ -13,6 +13,7 @@ const App = () => {
           <Navbar />
           <Herosection />
           <About />
+          <Skills />
         
     </main>
   );

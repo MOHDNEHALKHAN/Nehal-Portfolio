@@ -13,7 +13,7 @@ function About() {
       duration: 2,
       scrollTrigger: {
         trigger: "p",
-        markers: true,
+        
         scroller : "body",
         start: "top 50%", // Start the animation when 60% of the Herosection is reached
       },
@@ -25,7 +25,7 @@ function About() {
       duration: 2,
       scrollTrigger: {
         trigger: ".desc",
-        markers: true,
+        
         scroller : "body",
         start: "top 50%", // Start the animation when 60% of the Herosection is reached
       },
@@ -33,15 +33,15 @@ function About() {
   });
 
   return (
-    <div className= " about-content flex flex-col px-5 py-24 lg:px-10 xl:px-10  w-full bg-orange-100 overflow-hidden">
-            <div className="flex flex-col items-center pt-6">
-            <p className="font-['Goldman'] text-2xl font-bold text-gray-800">Get to know</p>
-            <p className="font-['Goldman'] text-5xl font-bold text-rose-400">About Me</p>
+    <div className= " about-content flex flex-col px-5 py-24 lg:px-10 xl:px-10  w-full bg-orange-100 overflow-hidden h-dvh">
+            <div className="flex flex-col items-center md:pt-6 lg:pt-6 xl:pt-6">
+            <p className="font-['Goldman'] text-xl md:text-2xl lg:text-2xl xl:text-2xl font-bold text-gray-800">Get to know</p>
+            <p className="font-['Goldman'] text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-bold text-rose-400">About Me</p>
             </div>
-            <h6 className="desc tracking-wide py-24 font-['kanit'] font-semibold text-gray-800  text-4xl text-center">Welcome to my online portfolio! I&apos;m Mohd Nehal Khan, a full-stack developer,and contributor to open-source software. I am a second-year student at MUJ & a self-taught developer, currently dirtying my hands in learning & understanding programming languages and technical tools, exploring every tech field for better knowledge and expanding my network with professionals and enthusiastic developers worldwide.
+            <h6 className="desc sm:tracking-wide md:tracking-wider lg:tracking-wider xl:tracking-wider  py-24 font-['kanit'] font-medium md:font-bold lg:font-bold xl:font-bold text-gray-800  text-xl md:text-3xl lg:text-3xl xl:text-3xl text-center">Welcome to my online portfolio! I&apos;m Mohd Nehal Khan, a full-stack developer,and contributor to open-source software. I am a second-year student at MUJ & a self-taught developer, currently dirtying my hands in learning & understanding programming languages and technical tools, exploring every tech field for better knowledge and expanding my network with professionals and enthusiastic developers worldwide.
             Expressing my knowledge whatever I learnt through my projects & blogs</h6>
     </div>
   )
 }
 
-export default About
+export default About;
