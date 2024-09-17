@@ -33,7 +33,7 @@ function About() {
   });
 
   return (
-    <div className= "about-content flex flex-col px-5 py-24 lg:px-10 xl:px-10  w-full bg-orange-100 overflow-hidden">
+    <div className= " about-content flex flex-col px-5 py-24 lg:px-10 xl:px-10  w-full bg-orange-100 overflow-hidden">
             <div className="flex flex-col items-center pt-6">
             <p className="font-['Goldman'] text-2xl font-bold text-gray-800">Get to know</p>
             <p className="font-['Goldman'] text-5xl font-bold text-rose-400">About Me</p>
