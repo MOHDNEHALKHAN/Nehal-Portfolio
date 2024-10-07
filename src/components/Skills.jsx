@@ -5,19 +5,29 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Skills() {
-  //animate skill page using pin
-  useGSAP(() => {
+ // animate the skill section  when user hit 60% the page of about section
+ useGSAP(() => {
 
-
-  }, []);
+  gsap.from(".skill", {
+    opacity: 0,
+    y: -400,
+    duration: 2,
+    scrollTrigger: {
+      trigger: ".skill",
+      start: 'top +=300',
+      end: '+=350',
+      scrub: 2,
+    },
+  });
+});
   return (
-    <div className= "skills-container  flex flex-col px-5 py-24 lg:px-10 xl:px-10  w-full bg-teal-200 overflow-hidden h-dvh">
-            <div className="flex flex-col items-center md:pt-6 lg:pt-6 xl:pt-6">
-            <p className="font-['Goldman'] text-xl md:text-2xl lg:text-2xl xl:text-2xl font-bold text-gray-800">Skills I Have</p>
-            <p className="font-['Goldman'] text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-bold text-rose-400">My Skills</p>
+    <div className= "flex flex-col px-5 lg:px-10 xl:px-8 py-24 md:py-20 lg:py-20 xl:py-18 w-full bg-teal-200 overflow-hidden h-dvh">
+            <div className="skill flex flex-col items-center md:pt-4 lg:pt-4 xl:pt-0">
+            <p className=" font-['Goldman'] text-xl md:text-2xl lg:text-2xl xl:text-2xl font-bold text-gray-800">Skills I Have</p>
+            <p className=" font-['Goldman'] text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-bold text-rose-400">My Skills</p>
             </div>
-            <div className="text-center flex flex-col py-10 md:py-8 lg:py-8 xl:py-8">
-            <h4 className="block font-['kanit'] font-semibold my-4 pb-5 text-xl md:text-3xl lg:text-3xl xl:text-3xl "><span className='rounded-full bg-rose-400  border-solid border-1 border-black text-white px-5'> Frontend </span></h4>  
+            <div className="skills-container text-center flex flex-col py-10 md:py-4 lg:py-4 xl:py-4">
+            <h4 className="block font-['kanit'] font-semibold my-2 pb-5 text-xl md:text-3xl lg:text-3xl xl:text-3xl "><span className='rounded-full bg-rose-400  border-solid border-1 border-black text-white px-5'> Frontend </span></h4>  
             <div className="frontendSkill flex flex-row gap-2 justify-evenly">
 
             
@@ -47,7 +57,7 @@ function Skills() {
           
           
             </div>
-            <h4 className="font-['kanit'] font-semibold my-4 pb-5 text-xl md:text-3xl lg:text-3xl xl:text-3xl"><span className='rounded-full bg-rose-400  border-solid border-1 border-black text-white px-5'>Backend</span></h4>
+            <h4 className="font-['kanit'] font-semibold my-2 pb-5 text-xl md:text-3xl lg:text-3xl xl:text-3xl"><span className='rounded-full bg-rose-400  border-solid border-1 border-black text-white px-5'>Backend</span></h4>
             <div className="backendSkill flex flex-row gap-2 justify-evenly">
 
             <svg viewBox="0 0 128 128" width="90px">
@@ -63,7 +73,7 @@ function Skills() {
             </svg>
           
             </div>
-            <h4 className="font-['kanit'] font-semibold my-4 pb-5 text-xl md:text-3xl lg:text-3xl xl:text-3xl"><span className='rounded-full bg-rose-400  border-solid border-1 border-black text-white px-5'>Other Technologies</span></h4>
+            <h4 className="font-['kanit'] font-semibold my-2 pb-5 text-xl md:text-3xl lg:text-3xl xl:text-3xl"><span className='rounded-full bg-rose-400  border-solid border-1 border-black text-white px-5'>Other Technologies</span></h4>
             <div className="OtherTech flex flex-row gap-2 justify-evenly">
 
             <svg viewBox="0 0 128 128" width="90px">

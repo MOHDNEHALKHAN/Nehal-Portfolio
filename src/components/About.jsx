@@ -16,7 +16,9 @@ function About() {
         trigger: "p",
         
         scroller : "body",
-        start: "top 50%", // Start the animation when 60% of the Herosection is reached
+        start: "top 60%",
+        end: "top 30%",
+        scrub: true,
       },
     });
 
@@ -28,7 +30,9 @@ function About() {
         trigger: ".desc",
         
         scroller : "body",
-        start: "top 50%", // Start the animation when 60% of the Herosection is reached
+        start: "top 70%", 
+        end: "top 40%",
+        scrub: true,
       },
     });
   });
