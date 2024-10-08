@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Herosection from "./components/Herosection";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Blogs from "./components/Blogs";
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
           <Herosection />
           <About />
           <Skills />
+          <Blogs />
         
     </main>
   );
