@@ -6,6 +6,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Blogs from "./components/Blogs";
 import Project from "./components/Project";
+import ContactForm from "./components/ContactForm";
 
 const App = () => {
 
@@ -18,7 +19,7 @@ const App = () => {
           <Skills />
           <Project/>
           <Blogs />
-        
+          <ContactForm />
     </main>
   );
 };
