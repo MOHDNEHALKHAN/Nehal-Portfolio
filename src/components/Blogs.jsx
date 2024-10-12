@@ -24,8 +24,8 @@ function Blogs() {
   return (
     <div className="flex flex-col px-5 py-24 lg:px-8 xl:px-8  w-full bg-orange-100 overflow-hidden ">
       <div className="blog flex flex-col items-center">
-        <p className="font-['Goldman'] text-xl font-bold text-gray-800">Read Out My</p>
-        <p className="font-['Goldman'] text-4xl font-bold text-rose-400">Blogs</p>
+        <p className="font-['Goldman'] text-xl md:text-2xl lg:text-2xl xl:text-2xl font-bold text-gray-800">Read Out My</p>
+        <p className="font-['Goldman'] text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-bold text-rose-400">Blogs</p>
       </div>
       <div className="flex flex-wrap gap-5 py-10 justify-center">
       <BlogCard blogname="Comprehensive Steps to Kick Off Global Hack Week" blogdesc="" img="https://cdn.hashnode.com/res/hashnode/image/upload/v1727336530106/d113424b-dc13-4bb5-befe-2bbe68a67596.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp" link="https://nehalblogs.hashnode.dev/comprehensive-steps-to-kick-off-global-hack-week" />
