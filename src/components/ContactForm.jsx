@@ -23,29 +23,29 @@ function ContactForm() {
         });
     }); {
         return (
-            <div className="  flex flex-col px-5 lg:px-10 xl:px-8 py-24 md:py-20 lg:py-20 xl:py-18  w-full bg-blue-300 overflow-hidden">
+            <div className="  flex flex-col px-5 lg:px-10 xl:px-8 py-24 md:py-20 lg:py-20 xl:py-18  w-full bg-blue-300 overflow-hidden items-center">
                 <div className="form flex flex-col items-center md:pt-6 lg:pt-6 xl:pt-6 py-5">
                     <p className="font-['Goldman'] text-xl md:text-2xl lg:text-2xl xl:text-2xl font-bold text-white">CONTACT ME</p>
-                </div>
-                <div className='flex flex-col items-center py-8 px-5 bg-yellow-300 gap-10 rounded-3xl'>
+                </div> 
+                <div className='flex flex-col items-center py-8 px-5 bg-yellow-300 gap-10 rounded-3xl max-w-3xl justify-center'>
                     <div className='flex flex-col lg:flex-row xl:flex-row gap-10'>
-                        <div className='flex flex-col gap-5'>
+                        <div className='flex flex-col gap-9'>
                             <div className='flex flex-col'>
                                 <label className='font-[Kanit] font-medium text-xl'>Name*</label>
-                                <input type='text' className='rounded-full py-2 px-5'/>
+                                <input type='text' className='rounded-full py-2 px-5 focus:outline-none focus:border-transparent'/>
                             </div>
                             <div className='flex flex-col'>
                                 <label className='font-[Kanit] font-medium text-xl'>Email*</label>
-                                < input type='email' className='rounded-full py-2 px-5' />
+                                < input type='email' className='rounded-full py-2 px-5 focus:outline-none focus:border-transparent' />
                             </div>
                         </div>
-                        <div className='flex flex-col gap-10'>
+                        <div className='flex flex-col'>
                             <label className='font-[Kanit] font-medium text-xl'>Message*</label>
-                            <textarea type='text' className='rounded-3xl py-12 px-10' />
+                            <textarea type='text' className='rounded-3xl py-4 px-3 h-[150px] focus:outline-none focus:border-transparent' />
                         </div>
                     </div>
                     <div >
-                        <button className='bg-red-400 rounded-full py-2 px-8'>Send</button>
+                        <button className='bg-red-400 rounded-full py-2 px-9 font-[Kanit] text-xl'>Send</button>
                     </div>
 
                 </div>
