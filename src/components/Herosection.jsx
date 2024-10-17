@@ -1,14 +1,37 @@
 import nehalImg from "../assets/Nehal.svg";
 import { useGSAP } from '@gsap/react';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import gsap from 'gsap';
 
+gsap.registerPlugin(ScrollToPlugin);
+
 function Herosection() {
+  const resumeDownload = () => {
+    
+    const resumeUrl = '/Nehal_Resume.pdf';  
+    
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.setAttribute('download', 'Nehal_Resume.pdf'); 
+    document.body.appendChild(link);
+   
+    link.click();
+    
+    document.body.removeChild(link);
+  };
+
+
+  const scrollToSection = (sectionId) => {
+    gsap.to(window, { duration: 2, scrollTo: `#${sectionId}` });
+  };
+  
   useGSAP(() => {
     // Split the text into spans
     const text = document.querySelector('.animated-text');
     const textContent = text.textContent;
     text.innerHTML = textContent.split('').map(char => `<span>${char}</span>`).join('');
 
+    
     // Animate the spans
     gsap.fromTo('.animated-text span', {
       opacity: 0,
@@ -32,7 +55,7 @@ function Herosection() {
     });
 
     //Animate the buttons
-    gsap.from('.flex button', {
+    gsap.from('.buttons', {
       opacity: 0,
       x: -50,
       duration: 2,
@@ -43,15 +66,17 @@ function Herosection() {
   });
 
   return (
-    <div className="herosection flex flex-col px-5 py-24 lg:py-40 xl:py-40 w-full bg-emerald-200 overflow-hidden h-dvh  ">
+    <div className="herosection flex flex-col px-5 py-24 lg:py-40 xl:py-40 w-full bg-emerald-200 overflow-hidden xl:h-dvh  ">
       <div className="flex flex-col lg:flex-row xl:flex-row items-center">
-        <h1 className="animated-text text-center lg:text-left xl:text-left text-5xl  lg:text-6xl xl:text-8xl font-bold text-gray-800 px-6 lg:px-10 xl:px-10 font-['Kanit'] z-10">
+        <h1 className="select-none animated-text text-center lg:text-left xl:text-left text-5xl  lg:text-6xl xl:text-8xl font-bold text-gray-800 px-6 lg:px-10 xl:px-10 font-['Kanit'] z-10">
           Hello, I&apos;m Fullstack Developer
         </h1>
         <img src={nehalImg} alt="imgboy" className="nehalImg cursor-pointer z-20 px-10 md:px-5 lg:px-10 xl:px-5 py-5  sm:overflow-hidden " />
       </div>
       <div className=" flex flex-col lg:flex-row xl:flex-row mt-5 mx-5 lg:px-10 xl:px-10">
-        <button className=" flex justify-center flex-row gap-3 items-center bg-slate-600 text-white px-5 py-2 rounded-full font-['Goldman'] font-normal mt-5">
+        <button className="buttons flex justify-center flex-row gap-3 items-center bg-slate-600 text-white hover:bg-white hover:text-slate-600 px-5 py-2 rounded-full font-['Goldman'] font-normal mt-5"
+       onClick={resumeDownload}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -66,7 +91,11 @@ function Herosection() {
           </svg>
           Download Resume
         </button>
-        <button className="flex justify-center  gap-3 items-center bg-slate-600 text-white px-5 py-2 rounded-full font-['Goldman'] font-normal mt-5 lg:ml-5 xl:ml-5">
+        <button 
+        className="buttons flex justify-center  gap-3 items-center bg-slate-600 text-white hover:bg-white hover:text-slate-600 px-5 py-2 rounded-full font-['Goldman'] font-normal mt-5 lg:ml-5 xl:ml-5"
+        onClick={() => scrollToSection('contactform')}
+
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
