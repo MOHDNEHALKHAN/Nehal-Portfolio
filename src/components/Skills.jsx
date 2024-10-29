@@ -21,7 +21,7 @@ function Skills() {
   });
 });
   return (
-    <div id="skills" className= "flex flex-col px-5 lg:px-10 xl:px-8 py-24 md:py-20 lg:py-20 xl:py-18 w-full bg-emerald-200 overflow-hidden xl:h-dvh select-none">
+    <div id="skills" className= "flex flex-col px-5 lg:px-10 xl:px-8 py-24 md:py-20 lg:py-20 xl:py-18 w-full bg-[#c9f472ed] overflow-hidden xl:h-dvh select-none">
             <div className="skill flex flex-col items-center md:pt-4 lg:pt-4 xl:pt-0">
             <p className=" font-['Goldman'] text-xl md:text-2xl lg:text-2xl xl:text-2xl font-bold text-gray-800">Skills I Have</p>
             <p className=" font-['Goldman'] text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-bold text-rose-400">My Skills</p>

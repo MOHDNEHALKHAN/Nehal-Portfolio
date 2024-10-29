@@ -22,7 +22,7 @@ function Blogs() {
     });
   });
   return (
-    <div id="blogs" className="flex flex-col px-5 py-24 lg:px-8 xl:px-8  w-full bg-emerald-200 overflow-hidden select-none">
+    <div id="blogs" className="flex flex-col px-5 py-24 lg:px-8 xl:px-8  w-full bg-[#CBDCEB] overflow-hidden select-none">
       <div className="blog flex flex-col items-center">
         <p className="font-['Goldman'] text-xl md:text-2xl lg:text-2xl xl:text-2xl font-bold text-gray-800">Read Out My</p>
         <p className="font-['Goldman'] text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-bold text-rose-400">Blogs</p>

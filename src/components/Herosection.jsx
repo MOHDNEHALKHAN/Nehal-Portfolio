@@ -66,7 +66,7 @@ function Herosection() {
   });
 
   return (
-    <div className="herosection flex flex-col px-5 py-24 lg:py-40 xl:py-40 w-full bg-emerald-200 overflow-hidden xl:h-dvh  ">
+    <div id="home" className="herosection flex flex-col px-5 py-24 lg:py-40 xl:py-40 w-full bg-emerald-200 overflow-hidden xl:h-dvh  ">
       <div className="flex flex-col lg:flex-row xl:flex-row items-center">
         <h1 className="select-none animated-text text-center lg:text-left xl:text-left text-5xl  lg:text-6xl xl:text-8xl font-bold text-gray-800 px-6 lg:px-10 xl:px-10 font-['Kanit'] z-10">
           Hello, I&apos;m Fullstack Developer
