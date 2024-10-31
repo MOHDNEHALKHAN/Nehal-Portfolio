@@ -7,6 +7,7 @@ import Skills from "./components/Skills";
 import Blogs from "./components/Blogs";
 import Project from "./components/Project";
 import ContactForm from "./components/ContactForm";
+import Cursor from "./components/Cursor";
 
 const App = () => {
 
@@ -20,6 +21,7 @@ const App = () => {
           <Project/>
           <Blogs />
           <ContactForm />
+          <Cursor/>
     </main>
   );
 };
