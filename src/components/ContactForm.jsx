@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState , useEffect } from 'react';
 import axios from 'axios';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
@@ -28,6 +28,14 @@ function ContactForm() {
         setResponseMessage("Failed to send details");
       }
     };
+
+  useEffect(() => {
+    if (responseMessage) {
+      const timeoutId = setTimeout(() => setResponseMessage(''), 3000);
+      return () => clearTimeout(timeoutId);
+    }
+  }, [responseMessage]); 
+
     useGSAP(() => {
 
         gsap.from(".form", {

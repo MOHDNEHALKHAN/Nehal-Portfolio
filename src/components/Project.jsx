@@ -28,7 +28,7 @@ function Project() {
             <p className="font-['Goldman'] text-xl md:text-2xl lg:text-2xl xl:text-2xl font-bold text-gray-800">See My</p>
             <p className="font-['Goldman'] text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-bold text-rose-400">Projects</p>
             </div>
-            <div className="project-sec flex flex-wrap gap-5 py-10 justify-center">
+            <div className="project-sec flex flex-wrap gap-10 py-10 justify-center">
 <ProjectCard ProjectName="Weather App"  ProjectImg={WeatherImg} GitHubLink="https://github.com/MOHDNEHALKHAN/Weather-App" LiveLink="https://weather-app-rmx8.onrender.com/"/>
 <ProjectCard ProjectName="Todolist App"  ProjectImg={TaskImg} GitHubLink="https://github.com/MOHDNEHALKHAN/Todolist-app" LiveLink="https://todolist-app-flame-three.vercel.app/"/>
             </div>
