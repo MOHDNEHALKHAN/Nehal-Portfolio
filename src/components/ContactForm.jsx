@@ -20,7 +20,7 @@ function ContactForm() {
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-        const response = await axios.post('http://localhost:5000/api/contact', formData);
+        const response = await axios.post('https://nehal-portfolio.onrender.com/api/contact', formData);
         setResponseMessage(response.data.message);
         setFormData({ name: '', email: '', message: '' });
       } catch (error) {
