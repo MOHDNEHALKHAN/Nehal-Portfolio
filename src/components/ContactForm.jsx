@@ -13,6 +13,7 @@ function ContactForm() {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
     const [responseMessage, setResponseMessage] = useState('');
     const [loading, setLoading] = useState(false);  // New loading state
+    const [errorMessage, setErrorMessage] = useState('');  // New error message state
   
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -20,6 +21,14 @@ function ContactForm() {
   
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setErrorMessage('');  // Clear any previous error message
+
+        // Check for empty fields
+        if (!formData.name || !formData.email || !formData.message) {
+            setErrorMessage('Please enter your full information.');
+            return;
+        }
+
         setLoading(true);  // Set loading to true when form submission starts
         try {
             const response = await axios.post('https://nehal-portfolio.onrender.com/api/contact', formData);
@@ -59,6 +68,7 @@ function ContactForm() {
             <div className="form flex flex-col items-center md:pt-6 lg:pt-6 xl:pt-6 py-5">
                 <p className="font-['Goldman'] text-xl md:text-2xl lg:text-2xl xl:text-2xl font-bold text-gray-800">CONTACT ME</p>
                 {responseMessage && <p>{responseMessage}</p>}
+                {errorMessage && <p className="text-red-500">{errorMessage}</p>}  {/* Display error message */}
             </div>
             <form onSubmit={handleSubmit} className='flex flex-col items-center py-8 px-8 bg-blue-300 gap-10 rounded-3xl justify-center'>
                 <div className='flex flex-col lg:flex-row xl:flex-row gap-10 '>
