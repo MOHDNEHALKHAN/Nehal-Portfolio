@@ -26,6 +26,7 @@ function ContactForm() {
         // Check for empty fields
         if (!formData.name || !formData.email || !formData.message) {
             setErrorMessage('Please enter your full information.');
+            setTimeout(() => setErrorMessage(''), 4000);
             return;
         }
 
