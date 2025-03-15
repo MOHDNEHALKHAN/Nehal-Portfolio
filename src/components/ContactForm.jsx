@@ -32,7 +32,7 @@ function ContactForm() {
 
         setLoading(true);  // Set loading to true when form submission starts
         try {
-            const response = await axios.post('https://nehal-portfolio.onrender.com/api/contact', formData);
+            const response = await axios.post('https://nehal-portfolio.onrender.com/api/contact', formData); // http://localhost:5000/api/contact for local test 
             setResponseMessage(response.data.message);
             setFormData({ name: '', email: '', message: '' });
         } catch (error) {
