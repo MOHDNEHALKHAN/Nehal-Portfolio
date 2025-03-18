@@ -1,3 +1,6 @@
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+
 # PERSONAL PORTFOLIO WEBSITE
 
 <img  height="500px" width="300px" align="right" src="https://github.com/user-attachments/assets/2dbd2c91-c165-4f4c-9c0b-97fcb104fa89">
