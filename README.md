@@ -13,7 +13,7 @@
 
 **Database:** `MongoDB`
 
-**API:** `MongoDB API`
+**API:** `MongoDB API , Mailgun API`
 
  <h3>Outcomes🌟</h3>
  
@@ -21,6 +21,7 @@
 - The user can send me the review by completing the contact form.
 - Animated UI for better user interaction.
 - Showcasing all my tech skills, blogs and Projects in each section.
+- User will get a confirmation email that i got their response.
 
  <h3>Feedback📝</h3>
 If you have any feedback, please reach out to me at nehalk482@gmail.com
