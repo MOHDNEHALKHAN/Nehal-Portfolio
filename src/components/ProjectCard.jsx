@@ -11,7 +11,7 @@ function ProjectCard({ProjectName, ProjectImg, GitHubLink, LiveLink}) {
               href={GitHubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-red-400 text-lg font-semibold font-[kanit] hover:no-underline"
+              className="text-gray-500 text-lg font-semibold font-[kanit] hover:no-underline"
             >
                 GitHub Link🚀
             </a>
@@ -19,7 +19,7 @@ function ProjectCard({ProjectName, ProjectImg, GitHubLink, LiveLink}) {
               href={LiveLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-lime-600 text-lg font-semibold font-[kanit] hover:no-underline"
+              className="text-gray-500 text-lg font-semibold font-[kanit] hover:no-underline"
             >
                 Live Project🌐
             </a>

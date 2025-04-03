@@ -6,6 +6,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import LinkedinImg from '../assets/linkedin.svg';
 import GithubImg from '../assets/github.svg';
 import TwitterImg from '../assets/twitter.svg';
+import DiscordImg from '../assets/discord.svg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -75,34 +76,34 @@ function ContactForm() {
                 <div className='flex flex-col lg:flex-row xl:flex-row gap-10 '>
                     <div className='flex flex-col gap-9'>
                         <div className='flex flex-col'>
-                            <label className='font-[Kanit] font-medium text-xl text-slate-600'>Name*</label>
+                            <label className='font-[Kanit] font-medium text-xl text-slate-700'>Name*<br />
                             <input 
                                 type="text"
                                 name="name"
                                 value={formData.name}
                                 onChange={handleChange} 
                                 className='rounded-full py-2 px-5 focus:outline-none focus:border-transparent font-[kanit]' 
-                            />
+                            /></label>
                         </div>
                         <div className='flex flex-col'>
-                            <label className='font-[Kanit] font-medium text-xl text-slate-600'>Email*</label>
+                            <label className='font-[Kanit] font-medium text-xl text-slate-700'>Email*<br />
                             <input 
                                 type="email"
                                 name="email"
                                 value={formData.email}
                                 onChange={handleChange}
                                 className='rounded-full py-2 px-5 focus:outline-none focus:border-transparent font-[kanit]' 
-                            />
+                            /></label>
                         </div>
                     </div>
                     <div className='flex flex-col'>
-                        <label className='font-[Kanit] font-medium text-xl text-slate-600'>Message*</label>
+                        <label className='font-[Kanit] font-medium text-xl text-slate-700'>Message*<br />
                         <textarea 
                             name="message"
                             value={formData.message}
                             onChange={handleChange}
                             className='rounded-3xl py-4 px-3 h-[150px] focus:outline-none focus:border-transparent font-[kanit]' 
-                        />
+                        /></label>
                     </div>
                 </div>
                 <div>
@@ -116,6 +117,7 @@ function ContactForm() {
                     <a href="https://www.linkedin.com/in/mohd482/" target="_blank" rel="noopener noreferrer"><img src={LinkedinImg} alt="LinkedIn" className="cursor-pointer" /></a>
                     <a href="https://github.com/MOHDNEHALKHAN" target="_blank" rel="noopener noreferrer"><img src={GithubImg} alt="GitHub" className='cursor-pointer' /></a>
                     <a href="https://x.com/MOHDNEHAL482" target="_blank" rel="noopener noreferrer"><img src={TwitterImg} alt="Twitter" className='cursor-pointer' /></a>
+                    <a href="https://discord.com/users/nehal4226" target="_blank" rel="noopener noreferrer"><img src={DiscordImg} alt="Discord" className='cursor-pointer' /></a>
                 </div>
                 <div>
                     <p className='font-[Goldman] text-lg md:text-lg lg:text-xl xl:text-2xl text-center text-gray-800'>Connect With Me</p>

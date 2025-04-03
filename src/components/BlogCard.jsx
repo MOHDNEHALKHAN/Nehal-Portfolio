@@ -16,7 +16,7 @@ function BlogCard({blogname, blogdesc, img, link}) {
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-red-400 text-lg font-semibold font-[kanit] hover:no-underline"
+              className="text-gray-500 text-lg font-semibold font-[kanit] hover:no-underline"
             >
               Blog Link🔗
             </a>
