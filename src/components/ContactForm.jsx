@@ -76,34 +76,34 @@ function ContactForm() {
                 <div className='flex flex-col lg:flex-row xl:flex-row gap-10 '>
                     <div className='flex flex-col gap-9'>
                         <div className='flex flex-col'>
-                            <label className='font-[Kanit] font-medium text-xl text-slate-700'>Name*<br />
+                            <label className='font-[Kanit] font-medium text-xl text-slate-700'>Name*</label>
                             <input 
                                 type="text"
                                 name="name"
                                 value={formData.name}
                                 onChange={handleChange} 
                                 className='rounded-full py-2 px-5 focus:outline-none focus:border-transparent font-[kanit]' 
-                            /></label>
+                            />
                         </div>
                         <div className='flex flex-col'>
-                            <label className='font-[Kanit] font-medium text-xl text-slate-700'>Email*<br />
+                            <label className='font-[Kanit] font-medium text-xl text-slate-700'>Email*</label>
                             <input 
                                 type="email"
                                 name="email"
                                 value={formData.email}
                                 onChange={handleChange}
                                 className='rounded-full py-2 px-5 focus:outline-none focus:border-transparent font-[kanit]' 
-                            /></label>
+                            />
                         </div>
                     </div>
                     <div className='flex flex-col'>
-                        <label className='font-[Kanit] font-medium text-xl text-slate-700'>Message*<br />
+                        <label className='font-[Kanit] font-medium text-xl text-slate-700'>Message*</label>
                         <textarea 
                             name="message"
                             value={formData.message}
                             onChange={handleChange}
                             className='rounded-3xl py-4 px-3 h-[150px] focus:outline-none focus:border-transparent font-[kanit]' 
-                        /></label>
+                        />
                     </div>
                 </div>
                 <div>
