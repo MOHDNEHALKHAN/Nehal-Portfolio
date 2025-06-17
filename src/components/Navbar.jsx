@@ -26,7 +26,7 @@ function Navbar() {
       delay:0.5,
     });
 
-    tl.from("a", {
+    tl.from(".nav-icon", {
       duration: 1,
       y:-30,
       opacity:0,
@@ -41,7 +41,7 @@ function Navbar() {
         <div className="links gap-10 lg:gap-4 text-white hidden lg:flex xl:flex">
           {["Home","About", "Skills", "Projects", "Blogs"].map((item, index) => (
             <a key={index} 
-            className="bg-slate-600 border-slate-600 hover:bg-white hover:border-white hover:text-slate-600 text-md font-medium rounded-full border-1 px-5 py-1 cursor-pointer"
+            className="nav-icon bg-slate-600 border-slate-600 hover:bg-white hover:border-white hover:text-slate-600 text-md font-medium rounded-full border-1 px-5 py-1 cursor-pointer"
             onClick={() => scrollToSection(item.toLowerCase())}
             >{item}</a>
           ))}
@@ -63,7 +63,7 @@ function Navbar() {
         <div className={`flex lg:hidden xl:hidden fixed top-20 flex-col left-0 bg-rose-400 w-full rounded-xl px-6 py-5 gap-1 ${menuOpen ? '' : 'hidden'} drop-shadow-[5px_5px_rgb(252,227,138)]`} >
           {["Home","About", "Skills", "Projects", "Blogs"].map((item, index) => (
             <a key={index} 
-            className=" select-none hover:border-white text-md font-medium rounded-full px-5 border-1 border-transparent py-1 cursor-pointer"
+            className=" nav-icon select-none hover:border-white text-md font-medium rounded-full px-5 border-1 border-transparent py-1 cursor-pointer"
             onClick={() => { scrollToSection(item.toLowerCase()); toggleMobileMenu(); }}
             >{item}</a>
           ))}

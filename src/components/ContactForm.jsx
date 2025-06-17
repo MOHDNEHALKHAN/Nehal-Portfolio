@@ -52,12 +52,12 @@ function ContactForm() {
     }, [responseMessage]); 
 
     useGSAP(() => {
-        gsap.from(".form", {
+        gsap.from(".contact-title", {
             opacity: 0,
             y: -400,
             duration: 2,
             scrollTrigger: {
-                trigger: ".form",
+                trigger: ".contact-title",
                 start: 'top +=300',
                 end: '+=350',
                 scrub: 2,
@@ -67,7 +67,7 @@ function ContactForm() {
 
     return (
         <div id="contactform" className="flex flex-col px-5 lg:px-10 xl:px-8 py-24 md:py-20 lg:py-20 xl:py-20 w-full bg-emerald-200 overflow-hidden items-center select-none">
-            <div className="form flex flex-col items-center md:pt-6 lg:pt-6 xl:pt-6 py-5">
+            <div className="contact-title flex flex-col items-center md:pt-6 lg:pt-6 xl:pt-6 py-5">
                 <p className="font-['Goldman'] text-xl md:text-2xl lg:text-2xl xl:text-2xl font-bold text-gray-800">CONTACT ME</p>
                 {responseMessage && <p>{responseMessage}</p>}
                 {errorMessage && <p className="text-red-500">{errorMessage}</p>}  {/* Display error message */}
